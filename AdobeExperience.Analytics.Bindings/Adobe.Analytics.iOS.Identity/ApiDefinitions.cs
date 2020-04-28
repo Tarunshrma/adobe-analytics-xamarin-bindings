@@ -2,7 +2,7 @@ using System;
 using Foundation;
 using ObjCRuntime;
 
-namespace AdobeIdentity
+namespace Adobe.Experience.iOS.Identity
 {
     // @interface ACPCore : NSObject
     [BaseType(typeof(NSObject))]

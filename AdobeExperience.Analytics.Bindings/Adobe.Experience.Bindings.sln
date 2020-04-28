@@ -5,9 +5,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{8D077912-115
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Analytics.iOS.Core", "Adobe.Analytics.iOS.Core\Adobe.Analytics.iOS.Core.csproj", "{A5B31825-D685-4CBE-B02D-DBF013F19B1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.iOS.Core", "Adobe.Analytics.iOS.Core\Adobe.Experience.iOS.Core.csproj", "{A5B31825-D685-4CBE-B02D-DBF013F19B1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Analytics.iOS.Identity", "Adobe.Analytics.iOS.Identity\Adobe.Analytics.iOS.Identity.csproj", "{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.iOS.Identity", "Adobe.Analytics.iOS.Identity\Adobe.Experience.iOS.Identity.csproj", "{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.iOS.Analytics", "Adobe.Experience.iOS.Analytics\Adobe.Experience.iOS.Analytics.csproj", "{E4EB9401-B8FC-4FA5-861C-0E1B78955F7F}"
 EndProject

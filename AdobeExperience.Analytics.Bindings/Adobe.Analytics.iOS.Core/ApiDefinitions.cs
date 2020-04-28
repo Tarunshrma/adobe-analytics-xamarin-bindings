@@ -2,7 +2,7 @@ using System;
 using Foundation;
 using ObjCRuntime;
 
-namespace AdobeCore
+namespace Adobe.Experience.iOS.Core
 {
     // @interface ACPCore : NSObject
     [BaseType(typeof(NSObject))]
