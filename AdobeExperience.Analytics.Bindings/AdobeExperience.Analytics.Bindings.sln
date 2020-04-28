@@ -1,0 +1,24 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{8D077912-1151-4546-9E7B-32C587A54439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Analytics.iOS.Core", "Adobe.Analytics.iOS.Core\Adobe.Analytics.iOS.Core.csproj", "{A5B31825-D685-4CBE-B02D-DBF013F19B1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5B31825-D685-4CBE-B02D-DBF013F19B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B31825-D685-4CBE-B02D-DBF013F19B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B31825-D685-4CBE-B02D-DBF013F19B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B31825-D685-4CBE-B02D-DBF013F19B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5B31825-D685-4CBE-B02D-DBF013F19B1B} = {8D077912-1151-4546-9E7B-32C587A54439}
+	EndGlobalSection
+EndGlobal
