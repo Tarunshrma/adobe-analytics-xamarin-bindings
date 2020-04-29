@@ -94,6 +94,15 @@
     <Reference Include="Plugin.Connectivity">
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
     </Reference>
+    <Reference Include="Adobe.Experience.iOS.Analytics">
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Adobe.Experience.iOS.Core">
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Adobe.Experience.iOS.Identity">
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Identity.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

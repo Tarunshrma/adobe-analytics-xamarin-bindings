@@ -114,6 +114,15 @@
     <Reference Include="Xamarin.Android.Support.v7.CardView">
       <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.27.0.2\lib\MonoAndroid81\Xamarin.Android.Support.v7.CardView.dll</HintPath>
     </Reference>
+    <Reference Include="Adobe.Experience.Android.Analytics">
+      <HintPath>..\packages\Adobe.Analytic.Android.Bindings.1.1.0\lib\Adobe.Experience.Android.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Adobe.Experience.Android.Core">
+      <HintPath>..\packages\Adobe.Analytic.Android.Bindings.1.1.0\lib\Adobe.Experience.Android.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Adobe.Experience.Android.Identity">
+      <HintPath>..\packages\Adobe.Analytic.Android.Bindings.1.1.0\lib\Adobe.Experience.Android.Identity.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainApplication.cs" />
