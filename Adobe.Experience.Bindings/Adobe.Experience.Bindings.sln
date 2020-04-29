@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.iOS.Core",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.Android.Core", "Adobe.Experience.Android.Core\Adobe.Experience.Android.Core.csproj", "{6BC3E593-535F-43E0-A8B6-3BEA38DE93C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.Android.Analytics", "Adobe.Experience.Android.Analytics\Adobe.Experience.Android.Analytics.csproj", "{3E872449-7AA0-4973-8BC5-5102574C5218}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.iOS.Identity", "Adobe.Experience.iOS.Identity\Adobe.Experience.iOS.Identity.csproj", "{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.Android.Identity", "Adobe.Experience.Android.Identity\Adobe.Experience.Android.Identity.csproj", "{09F87BB6-5F53-4C2F-B21B-229B8D05BCAB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Experience.Android.Analytics", "Adobe.Experience.Android.Analytics\Adobe.Experience.Android.Analytics.csproj", "{3E872449-7AA0-4973-8BC5-5102574C5218}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +35,10 @@ Global
 		{6BC3E593-535F-43E0-A8B6-3BEA38DE93C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BC3E593-535F-43E0-A8B6-3BEA38DE93C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BC3E593-535F-43E0-A8B6-3BEA38DE93C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E872449-7AA0-4973-8BC5-5102574C5218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E872449-7AA0-4973-8BC5-5102574C5218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E872449-7AA0-4973-8BC5-5102574C5218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E872449-7AA0-4973-8BC5-5102574C5218}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,17 +47,13 @@ Global
 		{09F87BB6-5F53-4C2F-B21B-229B8D05BCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F87BB6-5F53-4C2F-B21B-229B8D05BCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F87BB6-5F53-4C2F-B21B-229B8D05BCAB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E872449-7AA0-4973-8BC5-5102574C5218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E872449-7AA0-4973-8BC5-5102574C5218}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E872449-7AA0-4973-8BC5-5102574C5218}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E872449-7AA0-4973-8BC5-5102574C5218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E4EB9401-B8FC-4FA5-861C-0E1B78955F7F} = {8D077912-1151-4546-9E7B-32C587A54439}
 		{A5B31825-D685-4CBE-B02D-DBF013F19B1B} = {8D077912-1151-4546-9E7B-32C587A54439}
 		{6BC3E593-535F-43E0-A8B6-3BEA38DE93C3} = {8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}
+		{3E872449-7AA0-4973-8BC5-5102574C5218} = {8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}
 		{16342C72-3DAA-4483-8E4D-A2A3EDCA3DCB} = {8D077912-1151-4546-9E7B-32C587A54439}
 		{09F87BB6-5F53-4C2F-B21B-229B8D05BCAB} = {8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}
-		{3E872449-7AA0-4973-8BC5-5102574C5218} = {8E946EF4-B0B3-46D9-8410-3B6419ADA8F4}
 	EndGlobalSection
 EndGlobal
