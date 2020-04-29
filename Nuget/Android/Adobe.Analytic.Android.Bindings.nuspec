@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Adobe.Analytic.Android.Bindings</id>
+    <version>1.1.0</version>
+    <authors>Tarun Sharma</authors>
+    <owners>Tarun Sharma</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Tarunshrma/adobe-analytics-xamarin-bindings</projectUrl>
+    <description>This is a binding package for adobe latest analytics libraries. Packages has support of Adobe Core, Analytics and Identity.</description>
+    <releaseNotes>Updated the namespaces to avoid confusion</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Adobe Analytics Xamarin.Android Xamarin Native Bindings</tags>
+  </metadata>
+  <files>
+    <file src="dlls\*.*" target="lib" />
+  </files>
+</package>
