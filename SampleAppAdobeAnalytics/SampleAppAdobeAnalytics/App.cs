@@ -1,4 +1,6 @@
 ﻿using System;
+using SampleAppAdobeAnalytics.Interface;
+using SampleAppAdobeAnalytics.Services;
 
 namespace SampleAppAdobeAnalytics
 {
