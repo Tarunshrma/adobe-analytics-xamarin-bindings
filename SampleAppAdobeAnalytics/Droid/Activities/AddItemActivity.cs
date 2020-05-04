@@ -4,6 +4,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using Android.Support.Design.Widget;
+using SampleAppAdobeAnalytics.Services;
 
 namespace SampleAppAdobeAnalytics.Droid
 {
@@ -19,6 +20,8 @@ namespace SampleAppAdobeAnalytics.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            AnalyticsService.TrackState("Add Item Screen", null);
+
             ViewModel = BrowseFragment.ViewModel;
 
             // Create your application here
@@ -32,6 +35,8 @@ namespace SampleAppAdobeAnalytics.Droid
 
         void SaveButton_Click(object sender, EventArgs e)
         {
+            AnalyticsService.TrackEvent("Add Item Tapped");
+
             var item = new Item
             {
                 Text = title.Text,

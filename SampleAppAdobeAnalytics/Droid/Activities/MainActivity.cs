@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.Support.V4.App;
 using Android.Support.V4.View;
 using Android.Support.Design.Widget;
+using SampleAppAdobeAnalytics.Services;
 
 namespace SampleAppAdobeAnalytics.Droid
 {
@@ -47,6 +48,8 @@ namespace SampleAppAdobeAnalytics.Droid
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
+
+            AnalyticsService.TrackState("Main Screen", null);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
