@@ -20,12 +20,12 @@
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
     <IOSDebuggerPort>37813</IOSDebuggerPort>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>Full</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>true</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -72,6 +72,7 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+<MtouchExtraArgs>gcc_flags '-framework SystemFramework'</MtouchExtraArgs>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -95,13 +96,13 @@
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
     </Reference>
     <Reference Include="Adobe.Experience.iOS.Analytics">
-      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Analytics.dll</HintPath>
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.2\lib\Adobe.Experience.iOS.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Adobe.Experience.iOS.Core">
-      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Core.dll</HintPath>
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.2\lib\Adobe.Experience.iOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="Adobe.Experience.iOS.Identity">
-      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.0\lib\Adobe.Experience.iOS.Identity.dll</HintPath>
+      <HintPath>..\packages\Adobe.Analytic.iOS.Bindings.1.1.2\lib\Adobe.Experience.iOS.Identity.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +144,8 @@
     </Compile>
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="PlatformService\IOSAdobeAnalytics.cs" />
+    <Compile Include="Extensions\DictionaryExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -152,6 +155,10 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PlatformService\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <Import Project="..\SampleAppAdobeAnalytics\SampleAppAdobeAnalytics.projitems" Label="Shared" Condition="Exists('..\SampleAppAdobeAnalytics\SampleAppAdobeAnalytics.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

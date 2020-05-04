@@ -1,4 +1,6 @@
 ﻿using System.Windows.Input;
+using SampleAppAdobeAnalytics.Constants;
+using SampleAppAdobeAnalytics.Services;
 
 namespace SampleAppAdobeAnalytics
 {
@@ -8,7 +10,11 @@ namespace SampleAppAdobeAnalytics
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Plugin.Share.CrossShare.Current.OpenBrowser("https://xamarin.com/platform"));
+            OpenWebCommand = new Command(() =>
+            {
+                AnalyticsService.TrackEvent(AnalyticConstants.BrowseEvent);
+                Plugin.Share.CrossShare.Current.OpenBrowser("https://xamarin.com/platform");
+            });
         }
 
         public ICommand OpenWebCommand { get; }

@@ -2,6 +2,7 @@
 using System.Collections.Specialized;
 
 using Foundation;
+using SampleAppAdobeAnalytics.Services;
 using UIKit;
 
 namespace SampleAppAdobeAnalytics.iOS
@@ -21,6 +22,8 @@ namespace SampleAppAdobeAnalytics.iOS
             base.ViewDidLoad();
 
             ViewModel = new ItemsViewModel();
+
+            AnalyticsService.TrackState(ViewModel.Title, null);
 
             // Setup UITableView.
             refreshControl = new UIRefreshControl();

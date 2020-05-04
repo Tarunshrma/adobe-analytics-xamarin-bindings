@@ -43,7 +43,9 @@
   <ItemGroup>
     <NativeReference Include="libACPIdentity_iOS.a">
       <Kind>Static</Kind>
-      <SmartLink>False</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <IsCxx>True</IsCxx>
+      <LinkerFlags>-lstdc++ -lz</LinkerFlags>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>

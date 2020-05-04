@@ -1,4 +1,7 @@
 ﻿using Foundation;
+using SampleAppAdobeAnalytics.Interface;
+using SampleAppAdobeAnalytics.iOS.PlatformService;
+using SampleAppAdobeAnalytics.Services;
 using UIKit;
 
 namespace SampleAppAdobeAnalytics.iOS
@@ -20,7 +23,9 @@ namespace SampleAppAdobeAnalytics.iOS
         {
             App.Initialize();
 
-
+            //Register iOS analytic service
+            ServiceLocator.Instance.Register<IAdobeAnalytics, IOSAdobeAnalytics>();
+            AnalyticsService.Setup();
 
             return true;
         }

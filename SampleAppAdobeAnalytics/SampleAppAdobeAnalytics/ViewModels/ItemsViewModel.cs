@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using SampleAppAdobeAnalytics.Constants;
+using SampleAppAdobeAnalytics.Services;
 
 namespace SampleAppAdobeAnalytics
 {
@@ -16,7 +19,13 @@ namespace SampleAppAdobeAnalytics
             Title = "Browse";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            AddItemCommand = new Command<Item>(async (Item item) => await AddItem(item));
+            AddItemCommand = new Command<Item>(async (Item item) =>
+            {
+                var data = new Dictionary<string, string>();
+                data.Add("item", item.Text);
+                AnalyticsService.TrackEvent(AnalyticConstants.AddItem, data);
+                await AddItem(item);
+            });
         }
 
         async Task ExecuteLoadItemsCommand()

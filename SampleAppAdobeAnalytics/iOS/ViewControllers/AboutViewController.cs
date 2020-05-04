@@ -1,4 +1,5 @@
 ﻿using System;
+using SampleAppAdobeAnalytics.Services;
 using UIKit;
 
 namespace SampleAppAdobeAnalytics.iOS
@@ -14,7 +15,7 @@ namespace SampleAppAdobeAnalytics.iOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+            AnalyticsService.TrackState(ViewModel.Title, null);
             Title = ViewModel.Title;
 
             AppNameLabel.Text = "SampleAppAdobeAnalytics";

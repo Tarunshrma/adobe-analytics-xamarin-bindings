@@ -20,8 +20,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interface\IAdobeAnalytics.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interface\IDataStore.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\AdobeAnalytics.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants\AnalyticConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\AppConfigurations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AnalyticsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Interface\" />
